@@ -96,15 +96,28 @@
 
     <!-- HEADER -->
     <div id="header">
-        <div class="d-flex align-items-center">
-            <button id="toggleSidebar" class="me-3">
-                <i class="fa fa-bars"></i>
-            </button>
-            <h5 class="mb-0">Admin Panel</h5>
-        </div>
-        <div>
-            <i class="fa fa-user"></i> Admin
-        </div>
+      <div class="d-flex align-items-center justify-content-between w-100">
+    <!-- Nút toggle + tiêu đề -->
+    <div class="d-flex align-items-center">
+        <button id="toggleSidebar" class="btn btn-sm btn-outline-light me-3">
+            <i class="fa fa-bars"></i>
+        </button>
+        <h5 class="mb-0 text-white">Admin Panel</h5>
+    </div>
+
+    <!-- Tài khoản (phải) -->
+    <div class="d-flex align-items-center">
+        <i class="fa fa-user me-2"></i>
+        <span class="me-3">${sessionScope.account.fullName}</span>
+        <a href="${pageContext.request.contextPath}/member/myaccount" class="btn btn-sm btn-outline-light me-2">
+            Tài khoản
+        </a>
+        <a href="${pageContext.request.contextPath}/logout" class="btn btn-sm btn-danger">
+            Đăng xuất
+        </a>
+    </div>
+</div>
+
     </div>
 
     <!-- SIDEBAR -->
