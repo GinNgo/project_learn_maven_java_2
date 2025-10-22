@@ -84,11 +84,17 @@
             </a>
         </li>
         <li>
-            <a href="${pageContext.request.contextPath}/admin/category/list" class="nav-link text-white">
+            <a href="${pageContext.request.contextPath}/admin-category" class="nav-link text-white">
                 <i class="fa fa-folder-open"></i>
                 <span class="menu-text ms-2">Quản lý Category</span>
             </a>
         </li>
+         <li>
+        <a href="${pageContext.request.contextPath}/admin-video" class="nav-link text-white">
+            <i class="fa fa-video-camera"></i>
+            <span class="menu-text ms-2">Quản lý Video</span>
+        </a>
+    	</li>
     </ul>
 </div>
 

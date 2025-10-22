@@ -15,7 +15,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 
 import jakarta.servlet.http.HttpServletResponse;
-import vn.iotstar.dao.impl.VideoDao;
+import vn.iotstar.dao.impl.VideoDaoImpl;
 import vn.iotstar.entity.Category;
 
 import vn.iotstar.entity.Video;
@@ -40,7 +40,7 @@ public class HomeController extends HttpServlet {
 
 			// lấy tất cả video
 
-			VideoDao dao = new VideoDao();
+			VideoDaoImpl dao = new VideoDaoImpl();
 
 			List<Video> list = dao.findAll();
 
@@ -80,7 +80,7 @@ public class HomeController extends HttpServlet {
 
 			// khởi tạo DAO
 
-			VideoDao dao = new VideoDao();
+			VideoDaoImpl dao = new VideoDaoImpl();
 
 			// khai báo danh sách và gọi hàm findAll() trong dao
 
